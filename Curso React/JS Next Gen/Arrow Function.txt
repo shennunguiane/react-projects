@@ -1,0 +1,17 @@
+/*function printMyName (name){
+  console.log(name);
+}*/
+
+const printMyName = name => console.log(name);
+
+const  printMyName1 = () => console.log('Shen1')
+
+const  printMyName2 = (name, surname) => console.log(name+' '+surname);
+
+const multiply = number => number * 2;
+
+printMyName('Shen');
+printMyName1();
+printMyName2('Shen', 'Nunguiane')
+
+console.log (multiply(2));

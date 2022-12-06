@@ -1,0 +1,47 @@
+*****Array Functions******
+
+---Map function-----
+const numbers = [1,2,3];
+
+const doubleNumArray = numbers.map(
+(num) => {
+  return num*2;
+})
+
+console.log(numbers); //stays unmutable
+console.log(doubleNumArray);
+
+*****Output****
+[1, 2, 3]
+[2, 4, 6]
+
+
+
+---FInd function-----
+const array1 = [5, 12, 8, 130, 44];
+
+const found = array1.find(element => element > 10);
+
+console.log(found);
+// expected output: 12
+
+
+---FInd function-----
+const inventory = [
+  { name: "apples", quantity: 2 },
+  { name: "bananas", quantity: 0 },
+  { name: "cherries", quantity: 5 },
+];
+
+const result = inventory.find(({name}) => name === "cherries");
+
+console.log(result); // { name: 'cherries', quantity: 5 }
+
+
+---Find Index function-----
+const array1 = [5, 12, 8, 130, 44];
+
+const isLargeNumber = (element) => element > 13;
+
+console.log(array1.findIndex(isLargeNumber));
+// expected output: 3

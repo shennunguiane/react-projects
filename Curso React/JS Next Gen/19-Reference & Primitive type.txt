@@ -1,0 +1,36 @@
+
+Copying a pointer or reference
+const person = {
+  name:'Shen'
+};
+
+const secondPerson = person;
+
+person.name = 'Max';
+
+console.log(secondPerson);
+
+*****output****
+[object Object] {
+  name: "Max"
+}
+ 
+
+Copying the object
+
+const person = {
+  name:'Shen'
+};
+
+const secondPerson = {
+  ...person
+};
+
+person.name = 'Max';
+
+console.log(secondPerson);
+
+*****output****
+[object Object] {
+  name: "Shen"
+\

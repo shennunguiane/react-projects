@@ -1,0 +1,12 @@
+Jsbin.com
+
+//Array Destructuring
+[a,b] = ['Hello', 'Shen'];
+console.log(a); //Hello
+console.log(b);//Shen
+
+
+//Object Destructuring
+{name} = {name: 'Shen', age : 25}; --not supported by Jsbin.com editor
+console.log(name) //Shen
+console.log(age) // undefined

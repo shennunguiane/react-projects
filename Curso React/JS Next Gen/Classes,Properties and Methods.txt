@@ -1,0 +1,45 @@
+class Human{
+  constructor (){
+    this.gender = 'female'
+  }
+  
+  printGender(){
+    console.log(this.gender);
+  }
+  
+}
+
+class Person extends Human{
+  constructor(){
+    super();
+    this.name = 'Shen';
+    this.gender = 'Male';
+  }
+  
+   printMyname () {
+   console.log(this.name);
+ }
+  
+}
+  
+const person= new Person();
+person.printMyname();
+person.printGender();
+
+
+
+class Human{
+    gender = 'female'; 
+    printGender = () => console.log(this.gender); 
+}
+
+class Person extends Human{
+ 
+    name = 'Shen';
+    printMyname = () => console.log(this.name);
+  
+}
+  
+const person= new Person();
+person.printMyname();
+person.printGender();

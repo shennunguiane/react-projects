@@ -1,0 +1,21 @@
+person.js
+const person = () => { name: 'Max'; }
+
+export default person
+
+
+utility.js
+export const clean = () => { console.log('Shen'); };
+export const baseData = 19;
+
+app.js
+import person from './person.js' /* when exported as a default*/
+import prs from './person.js' /* when exported as a default, You can choose the name */
+
+import {clean} from  './utility.js';
+
+import {baseData} from  './utility.js';
+
+import {clean as cl} from './utility.js';
+
+import * as shen from './utility.js'

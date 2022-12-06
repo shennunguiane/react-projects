@@ -1,0 +1,45 @@
+
+jsbin.com
+----The Spread operator-----------
+Takes all arrayElements or Objects.
+
+**Array***
+const numbers = [1, 2, 3];
+const newOneElement = [numbers,4];
+const newNumbers= [...numbers,4];
+
+console.log(newOneElement, newNumbers);
+=====output========
+[[1, 2, 3], 4]
+[1, 2, 3, 4]
+
+
+*****Object*****
+const person = {
+  name: 'Shen'
+};
+
+const newPerson = {
+  ...person,
+  age: 28
+}
+
+console.log(newPerson);
+
+*****output*****
+[object Object] {
+  age: 28,
+  name: "Shen"
+}
+
+----------Rest Operator---------
+
+****function****
+const filter = (...args) => {
+  return args.filter(el => el === 1);
+}
+
+console.log(filter(1,2,3));
+
+---Output----
+[1]
